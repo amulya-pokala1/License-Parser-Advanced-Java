@@ -67,7 +67,7 @@ public class XMLParser {
 		HashMap<String, ArrayList<LOA>> hm2=new HashMap<String, ArrayList<LOA>>();
 		try
 		{
-			File inputFile = new File("C:\\Users\\Hyderabad-Intern\\eclipse-workspace\\Java Training\\src\\com\\accolite\\mini_au\\First.xml");
+			File inputFile = new File("First.xml");
 			
 			
 	        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -126,7 +126,7 @@ public class XMLParser {
 		}
 		try
 		{
-			File inputFile = new File("C:\\Users\\Hyderabad-Intern\\eclipse-workspace\\Java Training\\src\\com\\accolite\\mini_au\\second.xml");
+			File inputFile = new File("second.xml");
 			
 			
 	        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -193,9 +193,9 @@ public class XMLParser {
 		{
 			e.printStackTrace();
 		}
-		PrintWriter writer = new PrintWriter("C:\\Users\\Hyderabad-Intern\\eclipse-workspace\\Java Training\\src\\com\\accolite\\mini_au\\merge.txt", "UTF-8");
-		PrintWriter writerIn = new PrintWriter("C:\\Users\\Hyderabad-Intern\\eclipse-workspace\\Java Training\\src\\com\\accolite\\mini_au\\invalidLOA.txt", "UTF-8");
-		PrintWriter writerInL = new PrintWriter("C:\\Users\\Hyderabad-Intern\\eclipse-workspace\\Java Training\\src\\com\\accolite\\mini_au\\invalidL.txt", "UTF-8");
+		PrintWriter writer = new PrintWriter("merge.txt", "UTF-8");
+		PrintWriter writerIn = new PrintWriter("invalidLOA.txt", "UTF-8");
+		PrintWriter writerInL = new PrintWriter("invalidL.txt", "UTF-8");
 		ArrayList<License> invalidL=new ArrayList<License>();
 		ArrayList<LOA> invalidLOA=new ArrayList<LOA>();
 		Set<String> keyset=hm.keySet(),keyset2=hm1.keySet();
